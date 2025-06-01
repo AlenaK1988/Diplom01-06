@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8cd5e3f-4cfd-4583-b4bf-6f6234289cd7">
+  <producedTypes>
+    <selectionType typeId="0a97f853-402d-4d91-bf0e-5e57cc087f03" valueTypeId="088e4e86-12e7-4019-b84d-ec660e9f15e4"/>
+    <listType typeId="46c103b2-2684-4b6d-8a8a-b9eeb593dcd5" valueTypeId="d9b2e419-12b4-4cb1-926d-acb8b6a7a807"/>
+    <managerType typeId="1f66ea3a-a58d-4eec-8798-45741ccf9117" valueTypeId="6534063a-e634-46cf-95cf-a28c575eeb75"/>
+    <recordSetType typeId="561cd248-2ae5-4a9e-a7ae-f62c16f19f15" valueTypeId="669b6d16-6cee-47ba-982e-ff077e3dd10c"/>
+    <recordKeyType typeId="96d4f9fa-9446-4574-9cae-cd3edd2a381c" valueTypeId="a45a68ea-ac68-40ca-8693-c70fff6305bc"/>
+    <recordType typeId="dd865521-0dda-48b6-95e1-235d0926154f" valueTypeId="f4cf7d10-05a4-4af8-bf3a-8b1c04287bea"/>
+    <recordManagerType typeId="869b37e0-9303-454d-a79b-d839dd21255c" valueTypeId="0dfe6b0e-33ff-4d00-bf97-eb707d5d1633"/>
+  </producedTypes>
+  <name>ВКМ_РеализацииКДоговорам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реализации к договорам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="575ae0af-a0ea-4005-b387-37f632546302">
+    <name>Реализация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.РеализацияТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b26d1fb6-d706-4cf1-8e1c-b6fa284c5524">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

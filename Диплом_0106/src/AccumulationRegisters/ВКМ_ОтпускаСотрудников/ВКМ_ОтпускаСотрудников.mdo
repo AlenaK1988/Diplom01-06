@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16f6d229-ee14-4b12-acb9-9d57ac131416">
+  <producedTypes>
+    <selectionType typeId="a4859c22-796f-4ab7-85a9-fd971e157f49" valueTypeId="d65be0ef-4c82-45a9-aecc-a0c74763fcc6"/>
+    <listType typeId="5561be1e-db0e-4de9-824e-3c976d3cbe1b" valueTypeId="b2c0d8b3-76bb-406b-a5d8-43031082301c"/>
+    <managerType typeId="02359675-b20e-4225-8f0b-567fab138835" valueTypeId="9d097048-ded2-4b0c-8761-81dfbcd45356"/>
+    <recordSetType typeId="6322bc45-8cb8-4460-885b-f0002357dbfe" valueTypeId="5c59ad65-aee2-4aca-9e97-47fd033dc395"/>
+    <recordKeyType typeId="26ae8cb3-be01-4554-82a5-269f3bd411ea" valueTypeId="d756f6d0-08cb-45bd-a450-ad911c470ff5"/>
+    <recordType typeId="e2906bb9-9785-413c-b376-196d0e0883f8" valueTypeId="afacde6f-c207-4330-882b-e2dd2da36f9e"/>
+  </producedTypes>
+  <name>ВКМ_ОтпускаСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отпуска сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="2b2f08fe-c929-499c-81bd-27fb7e6f9ca6">
+    <name>КоличествоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="99876be0-5ea0-44ea-a4d0-f887193fa19d">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВКМ_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
